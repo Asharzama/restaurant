@@ -1,0 +1,79 @@
+$primary: #006491;
+
+.featureContainer {
+  height: calc(80vh - 100px);
+  color: $primary;
+  overflow: hidden;
+  position: relative;
+  @media (max-width: 480px) {
+    height: 50vh;
+  }
+}
+
+.featureContainer svg {
+  height: 10%;
+  width: 20%;
+  color: $primary;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+  cursor: pointer;
+  @media (max-width: 480px) {
+    height: 5%;
+    width: 10%;
+  }
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  object-fit: contain;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.image img {
+  @media (max-width: 480px) {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.image h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  @media (max-width: 480px) {
+    font-size: 25px;
+  }
+}
+
+.image h4 {
+  font-size: 23px;
+  margin-bottom: 5px;
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
+}
+
+.image p {
+  text-transform: uppercase;
+  font-size: 21px;
+  margin-bottom: 3px;
+}
+
+.wrapper {
+  width: 300vw;
+  height: 100%;
+  display: flex;
+  transition: all 1.5s ease-in-out;
+}
+
+.imageContainer {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+}

@@ -1,0 +1,135 @@
+$primary: #006491;
+
+.cartContainer {
+  padding: 50px;
+  display: flex;
+  @media (max-width: 480px) {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+.cartLeft {
+  flex: 2;
+}
+
+.cartRight {
+  flex: 1;
+}
+
+.cartImgContainer {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  @media (max-width: 480px) {
+width: 30vw;
+height: 30vw;
+  }
+}
+
+.table {
+  width: 100%;
+  border-spacing: 20px;
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.name {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $primary;
+  font-size: 18px;
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
+}
+
+.total {
+  font-weight: 500;
+  font-size: 18px;
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
+}
+
+.cartWrapper {
+  width: 90%;
+  max-height: 300px;
+  background-color: $primary;
+  padding: 50px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+.cartTotal {
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.cartButton {
+  color: $primary;
+  background: #fff;
+  height: 30px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.totalTextTitle {
+  margin-right: 10px;
+}
+
+.trTitle {
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+.tr {
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+.extras, .cartPrice, .quantity{
+  @media (max-width: 480px) {
+font-size: 22px;
+  }
+}
+
+.cartPrice::before{
+  @media (max-width: 480px) {
+content: "Price:  ";
+font-weight: 500;
+  }
+}
+
+.quantity::before{
+  @media (max-width: 480px) {
+content: "Quantity:  ";
+font-weight: 500;
+  }
+}
+
+.extras::before{
+  @media (max-width: 480px) {
+content: "Extras:  ";
+font-weight: 500;
+  }
+}

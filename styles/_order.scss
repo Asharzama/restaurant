@@ -1,0 +1,119 @@
+.orderContainer {
+  padding: 50px;
+  display: flex;
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+}
+
+.orderLeft {
+  flex: 2;
+}
+
+.orderRight {
+  flex: 1;
+}
+
+.row:last-child {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.done {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inProgress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: inprogress 1.2s ease-in infinite alternate;
+}
+
+@keyframes inprogress {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.undone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.3;
+}
+
+.undone .checkedButton,
+.inProgress .checkedButton {
+  display: none;
+}
+
+.trTitle {
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+.tr {
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+}
+
+.id::before {
+  @media (max-width: 480px) {
+    content: "Order Id: ";
+    font-weight: 500;
+  }
+}
+
+.customer::before {
+  @media (max-width: 480px) {
+    content: "Customer: ";
+    font-weight: 500;
+  }
+}
+
+.customerAddress::before {
+  @media (max-width: 480px) {
+    content: "Address: ";
+    font-weight: 500;
+  }
+}
+
+.total::before {
+  @media (max-width: 480px) {
+    content: "Total: ";
+    font-weight: 500;
+  }
+}
+
+.done,
+.undone,
+.inProgress {
+  @media (max-width: 480px) {
+    margin-bottom: 20px;
+  }
+}
+
+.cartWrapper {
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}

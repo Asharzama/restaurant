@@ -1,0 +1,37 @@
+$secondary: #e31837;
+
+.listContainer {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  text-transform: uppercase;
+  line-height: 2em;
+  color: $secondary;
+  @media (max-width: 480px) {
+    text-align: center;
+  }
+}
+
+.desc {
+  font-size: 24px;
+  color: #444;
+  width: 70%;
+  line-height: 1.5em;
+  margin: 20px 0;
+  @media (max-width: 480px) {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+.listWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
